@@ -1,23 +1,41 @@
+:root {
+  --primary: #404040;
+  --primary-shade-1: #525252;
+  --primary-shade-2: #a8a29e;
+  --secondary: #fbbf24;
+  --text-heading: #ffffff;
+  --text-subheading: #d1d5db;
+}
+
 * {
-  color: #d1d5db;
+  color: var(--text-subheading);
 }
+
 body {
-  background-color: #a8a29e;
+  background-color: var(--primary-shade-2);
 }
+
 h1 {
-  color: #ffffff;
+  color: var(--text-heading);
   margin: 0 0 10px 0;
   font-size: 3rem;
 }
 
 h2 {
-  color: #ffffff;
+  color: var(--text-heading);
   margin: 0 0 10px 0;
   font-size: 1.5rem;
 }
 
 h3 {
   margin: 0 0 10px 0;
+  color: var(--text-heading);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--text-heading);
 }
 
 p {
@@ -31,7 +49,7 @@ ul {
 
 ul li::before {
   content: "\2022";
-  color: #fbbf24;
+  color: var(--secondary);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -44,9 +62,9 @@ a {
 
 .container {
   display: flex;
-  width: 55%;
+  width: 60%;
   margin: auto;
-  background-color: #404040;
+  background-color: var(--primary);
 }
 
 .first-col {
@@ -60,7 +78,7 @@ a {
 }
 
 .intro {
-  background-color: #525252;
+  background-color: var(--primary-shade-1);
   padding: 7rem 2.5rem 3rem;
   color: #ffffff;
   border-radius: 0 0 50px 0;
@@ -74,12 +92,12 @@ a {
 .skills {
   position: absolute;
   padding: 2rem;
-  margin-top: 25rem;
+  margin-top: 28rem;
 }
 
 .main {
   border-width: 70%;
-  border-right: 1px solid #525252;
+  border-right: 2px solid #525252;
   margin: 2rem 0;
   padding: 0 3rem;
 }
@@ -93,7 +111,7 @@ a {
 .info {
   position: absolute;
   padding: 4rem;
-  background-color: #fbbf24;
+  background-color: var(--secondary);
   border-radius: 0 0 0 50px;
   left: 10rem;
 }
@@ -106,4 +124,11 @@ img + a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
