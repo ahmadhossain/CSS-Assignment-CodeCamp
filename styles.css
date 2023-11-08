@@ -1,5 +1,5 @@
 :root {
-  --primary: #404040;
+  --primary: #282a30;
   --primary-shade-1: #525252;
   --primary-shade-2: #a8a29e;
   --secondary: #fbbf24;
@@ -12,7 +12,14 @@
 }
 
 body {
-  background-color: var(--primary-shade-2);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(46, 33, 5, 1) 51%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  font-family: "League Spartan", sans-serif;
 }
 
 h1 {
@@ -36,6 +43,7 @@ h3 {
 
 h4 {
   color: var(--text-heading);
+  font-size: 1rem;
 }
 
 p {
@@ -58,6 +66,10 @@ ul li::before {
 
 a {
   text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--secondary);
 }
 
 .container {
@@ -113,7 +125,7 @@ a {
   padding: 4rem;
   background-color: var(--secondary);
   border-radius: 0 0 0 50px;
-  left: 10rem;
+  left: 13rem;
 }
 
 img + a {
@@ -131,4 +143,35 @@ img + a {
 .text-sm {
   font-size: 0.8rem;
   line-height: 1rem;
+}
+
+.flex-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.h-bar {
+  padding: 0;
+  width: 10%;
+  height: 5px;
+  overflow: hidden;
+  background: var(--secondary);
+  border-radius: 6px;
+}
+
+.progress {
+  padding: 0;
+  width: 90%;
+  height: 5px;
+  overflow: hidden;
+  background: var(--primary-shade-2);
+  border-radius: 6px;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  background: var(--secondary);
 }

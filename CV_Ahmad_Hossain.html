@@ -3,6 +3,12 @@
   <head>
     <meta name="description" content="CV of Ahmmad Hossain" />
     <meta name="keywords" content="CV, Portfolio, Ahmad Hossain" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <title>CV: Ahmad Hossain</title>
@@ -12,29 +18,36 @@
         <!-- First Column -->
         <div class="first-col">
           <div class="info">
-            <img src="mail_logo.png" width="20" height="20" />
-            <a href="mailto:ahmadhossain.bu@gmail.com"
-              >ahmadhossain.bu@gmail.com
-            </a>
-            <img src="phone_logo.png" width="20" height="20" />
-            <a href="tel:(+880)1621566894">(+880)1621566894</a>
-            <div>
+            <div class="flex-vcenter">
+              <img src="mail_logo.png" width="20" height="20" />
+              <a href="mailto:ahmadhossain.bu@gmail.com"
+                >ahmadhossain.bu@gmail.com
+              </a>
+            </div>
+            <div class="flex-vcenter">
+              <img src="phone_logo.png" width="20" height="20" />
+              <a href="tel:(+880)1621566894">(+880)1621566894</a>
+            </div>
+            <div class="flex-vcenter">
               <img src="linkedin-logo.svg" width="20" height="20" />
               <a href="https://www.linkedin.com/in/ahmad20/">
                 linkedin.com/in/ahmad20
               </a>
             </div>
-            <img src="github_logo.png" width="20" height="20" />
-            <a href="https://github.com/ahmadhossain">
-              github.com/ahmadhossain
-            </a>
+            <div class="flex-vcenter">
+              <img src="github_logo.png" width="20" height="20" />
+              <a href="https://github.com/ahmadhossain">
+                github.com/ahmadhossain
+              </a>
+            </div>
           </div>
           <section class="intro">
-            <h1>
+            <h1 class="h1">
               AHMAD<br />
               HOSSAIN
             </h1>
             <h2>Software Developer</h2>
+            <div class="h-bar"></div>
           </section>
 
           <!-- Projects -->
@@ -48,48 +61,37 @@
             <h3>EXPERIENCE</h3>
             <hr align="left" width="85%" size="1px" />
             <!--First Project -->
-            <h4>
-              <b>WORLD PEACE CONVENING ASSOCIATION BANGLADESH (WPCAB)</b>
-            </h4>
+            <a class="text-sm" href="https://wpcab.vercel.app/">
+              <h4>WORLD PEACE CONVENING ASSOCIATION BANGLADESH (WPCAB)</h4>
+            </a>
             <ul>
               <li>Registration for new member and Authentication.</li>
               <li>Admin dashboard with filtering option.</li>
               <li>Developed server side APIs.</li>
             </ul>
             <p>Used: React, Express.js, MongoDB, React Hook Form, JWT auth.</p>
-            <a class="text-sm" href="https://wpcab.vercel.app/">See Live</a>
 
             <!--Second Project -->
-            <h4><b>REACT PIZZA:</b> A web application for ordering pizza.</h4>
+            <a class="text-sm" href="https://fast-react-pizza-rose.vercel.app/">
+              <h4>REACT PIZZA: A web application for ordering pizza.</h4>
+            </a>
+
             <ul>
               <li>Worked on menu, cart, order features.</li>
               <li>Integrated third-party API.</li>
             </ul>
             <p>Used: React, Redux Toolkit, Tailwind CSS.</p>
-            <a class="text-sm" href="https://fast-react-pizza-rose.vercel.app/">
-              See Live
-            </a>
-            <a
-              class="text-sm"
-              href="https://github.com/ahmadhossain/fast-react-pizza"
-            >
-              GitHub
-            </a>
 
             <!--Third Project -->
-            <h4><b>POPCORN:</b> A web application to get movie info.</h4>
+            <a class="text-sm" href="https://popcorn-react.vercel.app/">
+              <h4>POPCORN: A web application to get movie info.</h4>
+            </a>
             <ul>
               <li>Worked on movie search and rating.</li>
               <li>Admin dashboard with filtering option.</li>
               <li>Integrated third-party API.</li>
             </ul>
             <p>Used: React.</p>
-            <a class="text-sm" href="https://popcorn-react.vercel.app/">
-              See Live
-            </a>
-            <a class="text-sm" href="https://github.com/ahmadhossain/popcorn">
-              GitHub
-            </a>
 
             <!--Forth Project -->
             <h4>
@@ -152,14 +154,26 @@
                 <div>
                   <b>JavaScript</b>
                 </div>
+                <div class="progress">
+                  <div class="bar" style="width: 80%"></div>
+                </div>
                 <div>
                   <b>Python</b>
+                </div>
+                <div class="progress">
+                  <div class="bar" style="width: 70%"></div>
                 </div>
                 <div>
                   <b>C++</b>
                 </div>
+                <div class="progress">
+                  <div class="bar" style="width: 70%"></div>
+                </div>
                 <div>
                   <b>Java</b>
+                </div>
+                <div class="progress">
+                  <div class="bar" style="width: 60%"></div>
                 </div>
               </div>
             </section>
