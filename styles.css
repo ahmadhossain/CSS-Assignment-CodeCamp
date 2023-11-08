@@ -102,3 +102,8 @@ img + a {
   margin: 10px;
   color: #404040;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
