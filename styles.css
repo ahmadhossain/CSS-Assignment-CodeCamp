@@ -78,6 +78,7 @@ a:hover {
 
 .container {
   display: flex;
+  flex-direction: column-reverse;
   width: 100%;
   margin: auto;
   background-color: var(--primary);
@@ -91,17 +92,18 @@ a:hover {
 }
 
 .skills {
-  position: absolute;
+  position: relative;
   padding: 1.5rem;
   margin-top: 17rem;
 }
 
 .info {
-  position: absolute;
+  /* position: absolute; */
+  float: left;
   padding: 1.5rem;
   background-color: var(--secondary);
-  border-radius: 0 0 50px 50px;
-  left: 0;
+  border-radius: 0 0 0 50px;
+  width: 90%;
 }
 
 .intro {
@@ -113,28 +115,56 @@ a:hover {
 }
 
 .img {
+  display: none;
   width: 100%;
   float: right;
   border-radius: 0 0 0 50px;
+}
+.img-mb {
+  position: absolute;
+  border-radius: 0 0 0 50px;
+  right: 0px;
+  width: 30%;
+}
+
+.first-col {
+  position: relative;
+  width: 100%;
+}
+
+.second-col {
+  display: none;
+  /* width: 10%; */
 }
 
 @media (min-width: 600px) {
   .container {
     width: 80%;
   }
+  .img {
+    display: none;
+    width: 100%;
+    float: right;
+    border-radius: 0 0 0 50px;
+  }
+  .img-mb {
+    position: absolute;
+    border-radius: 0 0 0 50px;
+    right: 1px;
+    width: 40%;
+    z-index: 5;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
+    flex-direction: row;
     width: 60%;
   }
   .main {
     padding: 0 3rem;
   }
-  .skills {
-    padding: 2rem;
-    margin-top: 28rem;
-  }
+
   .info {
     padding: 4rem;
     border-radius: 0 0 0 50px;
@@ -143,20 +173,28 @@ a:hover {
   .intro {
     padding: 7rem 2.5rem 3rem;
     margin-top: 12rem;
+    /* width: 10%; */
   }
   .img {
     width: 110%;
+    display: flex;
   }
-}
-
-.first-col {
-  position: relative;
-  width: 160%;
-}
-
-.second-col {
-  width: 90%;
-  z-index: 1;
+  .img-mb {
+    display: none;
+  }
+  .first-col {
+    position: relative;
+    width: 160%;
+  }
+  .second-col {
+    width: 90%;
+    z-index: 1;
+  }
+  .skills {
+    position: absolute;
+    padding: 2rem;
+    margin-top: 28rem;
+  }
 }
 
 img + a {
