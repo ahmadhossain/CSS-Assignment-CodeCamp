@@ -16,10 +16,11 @@ body {
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(46, 33, 5, 1) 51%,
+    rgba(44, 59, 105, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
   font-family: "League Spartan", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -67,6 +68,7 @@ ul li::before {
 a {
   text-decoration-line: none;
 }
+
 a:hover {
   text-decoration-line: underline;
   text-decoration-color: var(--secondary);
@@ -74,9 +76,78 @@ a:hover {
 
 .container {
   display: flex;
-  width: 60%;
+  width: 100%;
   margin: auto;
   background-color: var(--primary);
+}
+
+.main {
+  border-width: 70%;
+  border-right: 2px solid #525252;
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+
+.skills {
+  position: absolute;
+  padding: 1.5rem;
+  margin-top: 17rem;
+}
+
+.info {
+  position: absolute;
+  padding: 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 0 0 50px 50px;
+  left: 0;
+}
+
+.intro {
+  background-color: var(--primary-shade-1);
+  padding: 5rem 2.5rem 2rem;
+  color: #ffffff;
+  border-radius: 0 0 50px 0;
+  margin-top: 9rem;
+}
+
+.img {
+  width: 100%;
+  float: right;
+  border-radius: 0 0 0 50px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .main {
+    padding: 0 3rem;
+  }
+  .skills {
+    padding: 2rem;
+    margin-top: 28rem;
+  }
+  .info {
+    padding: 4rem;
+    border-radius: 0 0 0 50px;
+    left: 13rem;
+  }
+  .intro {
+    padding: 7rem 2.5rem 3rem;
+    margin-top: 12rem;
+  }
+  .img {
+    width: 110%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    background-color: var(--primary);
+  }
 }
 
 .first-col {
@@ -87,45 +158,6 @@ a:hover {
 .second-col {
   width: 90%;
   z-index: 1;
-}
-
-.intro {
-  background-color: var(--primary-shade-1);
-  padding: 7rem 2.5rem 3rem;
-  color: #ffffff;
-  border-radius: 0 0 50px 0;
-  margin-top: 12rem;
-}
-
-.skills-p {
-  position: relative;
-  padding: 3rem;
-}
-.skills {
-  position: absolute;
-  padding: 2rem;
-  margin-top: 28rem;
-}
-
-.main {
-  border-width: 70%;
-  border-right: 2px solid #525252;
-  margin: 2rem 0;
-  padding: 0 3rem;
-}
-
-.img {
-  width: 110%;
-  float: right;
-  border-radius: 0 0 0 50px;
-}
-
-.info {
-  position: absolute;
-  padding: 4rem;
-  background-color: var(--secondary);
-  border-radius: 0 0 0 50px;
-  left: 13rem;
 }
 
 img + a {
