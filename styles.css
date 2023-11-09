@@ -36,8 +36,8 @@ h2 {
 }
 
 h3 {
-  margin: 0 0 10px 0;
-  color: var(--text-heading);
+  margin: 15px 0 10px 0;
+  color: var(--secondary);
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -49,6 +49,7 @@ h4 {
 
 p {
   margin: 0 0 1rem;
+  line-height: 1.25rem;
 }
 
 ul {
@@ -63,6 +64,7 @@ ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+  margin-bottom: 10px;
 }
 
 a {
@@ -120,6 +122,12 @@ a:hover {
   .container {
     width: 80%;
   }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
   .main {
     padding: 0 3rem;
   }
@@ -138,15 +146,6 @@ a:hover {
   }
   .img {
     width: 110%;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    width: 60%;
-    margin: auto;
-    background-color: var(--primary);
   }
 }
 
