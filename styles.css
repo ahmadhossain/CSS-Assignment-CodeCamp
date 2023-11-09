@@ -91,7 +91,6 @@ a:hover {
 }
 
 .skills {
-  position: absolute;
   padding: 1.5rem;
   margin-top: 17rem;
 }
@@ -100,7 +99,8 @@ a:hover {
   position: absolute;
   padding: 1.5rem;
   background-color: var(--secondary);
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 0 50px;
+  width: 93%;
   left: 0;
 }
 
@@ -108,7 +108,7 @@ a:hover {
   background-color: var(--primary-shade-1);
   padding: 5rem 2.5rem 2rem;
   color: #ffffff;
-  border-radius: 0 0 50px 0;
+  border-radius: 0 50px 50px 0;
   margin-top: 9rem;
 }
 
@@ -122,9 +122,12 @@ a:hover {
   .container {
     width: 80%;
   }
+  .skills {
+    margin-top: 130%;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .container {
     width: 60%;
   }
@@ -133,12 +136,13 @@ a:hover {
   }
   .skills {
     padding: 2rem;
-    margin-top: 28rem;
+    margin-top: 140%;
   }
   .info {
-    padding: 4rem;
+    padding: 2.5rem;
     border-radius: 0 0 0 50px;
-    left: 13rem;
+    width: 90%;
+    left: 40%;
   }
   .intro {
     padding: 7rem 2.5rem 3rem;
